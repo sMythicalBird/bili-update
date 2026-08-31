@@ -24,7 +24,7 @@ class FeishuConfig:
 
 @dataclass
 class SchedulerConfig:
-    interval_minutes: int = 10
+    interval_minutes: int = 5
 
 
 @dataclass
@@ -75,7 +75,7 @@ def load_config(config_path: str = "config.json") -> AppConfig:
 
     # 校验 scheduler
     sch = raw.get("scheduler", {})
-    interval = sch.get("interval_minutes", 10)
+    interval = sch.get("interval_minutes", 5)
     if not isinstance(interval, int) or interval < 5:
         raise ValueError("scheduler.interval_minutes 必须 >= 5 分钟")
 
