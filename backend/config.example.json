@@ -1,0 +1,15 @@
+{
+  "bilibili": {
+    "cookie": "SESSDATA=你的SESSDATA; bili_jct=你的bili_jct; DedeUserID=你的UID",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+  },
+  "feishu": {
+    "webhook_url": "https://open.feishu.cn/open-apis/bot/v2/hook/你的webhook_token"
+  },
+  "targets": [
+    { "uid": "123456", "name": "示例UP主" }
+  ],
+  "scheduler": {
+    "interval_minutes": 10
+  }
+}

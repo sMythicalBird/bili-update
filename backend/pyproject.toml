@@ -1,0 +1,11 @@
+[project]
+name = "bili-update"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "apscheduler>=3.11.3",
+    "requests>=2.34.2",
+    "flask>=3.1.0",
+    "flask-cors>=5.0.0",
+]
